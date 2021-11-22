@@ -1,5 +1,7 @@
 # 2021VRDL_HW2-Object Detector on SVHN Datasets
 
+This project is part of a series of projects for the course Selected Topics in Visual Recognition using Deep Learning. This Repository gathers the code for digit object detector.
+
 ## Environment
 ```
 Ubuntu 16.04.5 LTS (GNU/Linux 4.15.0-39-generic x86_64)
