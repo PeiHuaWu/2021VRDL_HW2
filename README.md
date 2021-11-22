@@ -27,13 +27,13 @@ python train.py --device 0 --batch-size 32 --img 640 640 --data hw2.yaml --cfg c
 
 ## Testing
 
-To evaluate my model on ImageNet, run:
+To evaluate my model on YOLOv4, run:
 ```
-python inference.py --img 640 --conf 0.001 --batch 8 --device 0 --data hw2.yaml --cfg cfg/hw2.cfg --weights weights/weight.pt
+python inference.py --img 640 --conf 0.05 --batch 32 --device 0 --data hw2.yaml --cfg cfg/hw2.cfg --weights weights/weight.pt --iou-thres 0.4  --task test --names data/hw2.names --save-json
 ```
 
 ## Weight for Training Model
 
 You can download the file here:
 
-- [The file of weight](https://drive.google.com/file/d/1EhhSuLb4FHcRADGh7Fi_ute492mAQavk/view?usp=sharing)
+- [The file of weight](https://drive.google.com/file/d/1dZdWxhHfwOKiUvjTGz1nA1JIVhhIULB6/view?usp=sharing)
