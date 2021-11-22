@@ -1,4 +1,4 @@
-# 2021VRDL_HW2
+# 2021VRDL_HW2-Object Detector on SVHN Datasets
 
 ## Environment
 ```
