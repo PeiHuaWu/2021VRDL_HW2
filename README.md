@@ -29,7 +29,7 @@ python train.py --device 0 --batch-size 32 --img 640 640 --data hw2.yaml --cfg c
 
 To evaluate my model on ImageNet, run:
 ```
-python test.py -img 640 --conf 0.001 --batch 8 --device 0 --data hw2.yaml --cfg cfg/hw2.cfg --weights weights/weight.pt
+python test.py --img 640 --conf 0.001 --batch 8 --device 0 --data hw2.yaml --cfg cfg/hw2.cfg --weights weights/weight.pt
 ```
 
 ## Weight for Training Model
