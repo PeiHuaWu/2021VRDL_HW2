@@ -22,14 +22,14 @@ pip install git+https://github.com/JunnYu/mish-cuda.git
 
 To train the model(s) in the paper, run this command:
 ```
-!python train.py --device 0 --batch-size 32 --img 640 640 --data hw2.yaml --cfg cfg/hw2.cfg --weights 'hw2.weights' --name hw2 --epoch 30 
+python train.py --device 0 --batch-size 32 --img 640 640 --data hw2.yaml --cfg cfg/hw2.cfg --weights 'hw2.weights' --name hw2 --epoch 30 
 ```
 
 ## Testing
 
 To evaluate my model on ImageNet, run:
 ```
-!python test.py -img 640 --conf 0.001 --batch 8 --device 0 --data coco.yaml --cfg cfg/yolov4-pacsp.cfg --weights weights/weight.pt
+python test.py -img 640 --conf 0.001 --batch 8 --device 0 --data coco.yaml --cfg cfg/yolov4-pacsp.cfg --weights weights/weight.pt
 ```
 
 ## Weight for Training Model
