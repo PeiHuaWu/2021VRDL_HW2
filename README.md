@@ -23,7 +23,7 @@ pip install git+https://github.com/JunnYu/mish-cuda.git
 
 ## Training
 
-To train the model(s) in the paper, run this command:
+To train the model in the paper, run this command:
 ```
 python train.py --device 0 --batch-size 32 --img 640 640 --data hw2.yaml --cfg cfg/hw2.cfg --weights 'hw2.weights' --name hw2 --epoch 30 
 ```
