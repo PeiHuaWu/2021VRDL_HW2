@@ -35,7 +35,7 @@ To evaluate my model on YOLOv4 and get the speed benchmark, run:
 python testing.py --img 640 --conf 0.05 --batch 32 --device 0 --data hw2.yaml --cfg cfg/hw2.cfg --weights weights/weight.pt --iou-thres 0.4  --task test --names data/hw2.names --save-json
 ```
 
-Please refer to [inference.ipynb](https://github.com/PeiHuaWu/2021VRDL_HW2/blob/main/inference.ipynb). And to get the testing data, you need the Authorization code, which is provided in my report.pdf.
+Please refer to [inference.ipynb](https://github.com/PeiHuaWu/2021VRDL_HW2/blob/main/inference.ipynb). And to get the testing data, you need the authorization code, which is provided in my report.pdf.
 
 ## Weight for Training Model
 
