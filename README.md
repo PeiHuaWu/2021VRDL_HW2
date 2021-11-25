@@ -25,20 +25,23 @@ pip install git+https://github.com/JunnYu/mish-cuda.git
 
 To train the model in the paper, run this command:
 ```
-python train.py --device 0 --batch-size 32 --img 640 640 --data hw2.yaml --cfg cfg/hw2.cfg --weights 'hw2.weights' --name hw2 --epoch 30 
+python training.py --device 0 --batch-size 32 --img 640 640 --data SVHN_hw2.yaml --cfg cfg/SVHN_hw2.cfg --weights 'hw2.weights' --name SVHN_hw2 --epoch 30 
 ```
 
 ## Testing & Speed Benchmark
 
 To evaluate my model on YOLOv4 and get the speed benchmark, run:
 ```
-python testing.py --img 640 --conf 0.05 --batch 32 --device 0 --data hw2.yaml --cfg cfg/hw2.cfg --weights weights/weight.pt --iou-thres 0.4  --task test --names data/hw2.names --save-json
+python testing.py --img 640 --conf 0.05 --batch 32 --device 0 --data data/SVHN_hw2.yaml --cfg cfg/SVHN_hw2.cfg --weights data/hw2/weight.pt --iou-thres 0.4  --task test --names data/SVHN_hw2.names --save-json
+
 ```
 
-Please refer to [inference.ipynb](https://github.com/PeiHuaWu/2021VRDL_HW2/blob/main/inference.ipynb). And to get the testing data, you need the authorization code, which is provided in my report.pdf.
+Please refer to [inference.ipynb](https://github.com/PeiHuaWu/2021VRDL_HW2/blob/main/inference.ipynb). You can download the required files in this python code, it's needless to download and upload the files by yourself.
 
-## Weight for Training Model
+## Files for downloading
 
-You can download the file here:
+You can also download the file here:
+
+- [The file of test.txt](https://drive.google.com/file/d/1eZ13Fek1ioRqFsXWAbA9lh0qyKlKy8SI/view?usp=sharing)
 
 - [The file of weight](https://drive.google.com/file/d/1dZdWxhHfwOKiUvjTGz1nA1JIVhhIULB6/view?usp=sharing)
